@@ -1,15 +1,15 @@
 class TodoList
-  @@tasks = []
   def initialize(name)
     @name = name
+    @tasks = []
   end
 
   def add_task(description, due_date)
-    @@tasks << Task.new(description, due_date)
+    @tasks << Task.new(description, due_date)
   end
 
   def todo_list
-    @@tasks
+    @tasks
   end
 end
 
