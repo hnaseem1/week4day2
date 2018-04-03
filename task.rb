@@ -6,6 +6,7 @@ class TodoList
 
   def add_task(description, due_date)
     @tasks << Task.new(description, due_date)
+    @tasks.last
   end
 
   def todo_list
